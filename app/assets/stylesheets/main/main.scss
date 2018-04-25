@@ -1,0 +1,83 @@
+* {
+  color: $color-black;
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: $color-primary;
+  padding: 10px 40px;
+  .nav-right {
+    float: right;
+  }
+  ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  * {
+    color: $color-white;
+  }
+}
+
+.button {
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: $color-white;
+}
+
+.button-primary {
+  background-color: $color-primary;
+}
+
+.flash-messages {
+  padding: 20px 50px;
+  li {
+    padding: 10px;
+    border-radius: 2px;
+    &.flash-failure {
+      background-color: $color-failure-light;
+      color: $color-failure;
+    }
+    &.flash-success {
+      background-color: $color-success-light;
+      color: $color-success;
+    }
+  }
+}
+
+.container {
+  padding: 0 30px;
+}

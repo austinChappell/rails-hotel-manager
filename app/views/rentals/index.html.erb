@@ -1,0 +1,9 @@
+<h1>Rentals</h1>
+
+<% if @rentals.any? %>
+  <ul>
+    <% @rentals.each do |r| %>
+      <li><%= r.name %></li>
+    <% end %>
+  </ul>
+<% end %>

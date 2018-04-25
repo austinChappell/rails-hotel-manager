@@ -1,0 +1,35 @@
+<%= form_for @user do |f| %>
+  <div>
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name, placeholder: "First Name" %>
+  </div>
+
+  <div>
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name, placeholder: "Last Name" %>
+  </div>
+
+  <div>
+    <%= f.label :email %><br />
+    <%= f.email_field :email, placeholder: "Email" %>
+  </div>
+
+  <div>
+    <%= f.label :gender %><br />
+    <%= f.select(:gender, ["male", "female"]) %>
+  </div>
+
+  <div>
+    <%= f.label :dob %><br />
+    <%= f.date_field :dob %>
+  </div>
+
+  <div>
+    <%= f.label :password %><br />
+    <%= f.password_field :password, placeholder: "Password" %>
+  </div>
+
+  <div>
+    <%= f.submit "Sign Up", class: "button button-primary" %>
+  </div>
+<% end %>

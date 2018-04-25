@@ -1,0 +1,13 @@
+<nav>
+  <ul>
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Users", users_path if is_admin %></li>
+    <div class="nav-right">
+      <% if logged_in? %>
+        <li><%= link_to "Logout", logout_path, method: :delete %></li>
+      <% else %>
+        <li><%= link_to "Login", login_path %></li>
+      <% end %>
+    </div>
+  </ul>
+</nav>
