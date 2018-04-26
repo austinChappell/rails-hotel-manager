@@ -1,0 +1,30 @@
+<%= form_for @property do |f| %>
+  <div>
+    <%= f.label :label %><br />
+    <%= f.text_field :label, placeholder: "Title" %>
+  </div>
+
+  <div>
+    <%= f.label :address %><br />
+    <%= f.text_field :address, placeholder: "Address" %>
+  </div>
+
+  <div>
+    <%= f.label :city %><br />
+    <%= f.text_field :city, placeholder: "City" %>
+  </div>
+
+  <div>
+    <%= f.label :state %><br />
+    <%= f.text_field :state, placeholder: "State" %>
+  </div>
+
+  <div>
+    <%= f.label :zip_code %><br />
+    <%= f.text_field :zip_code, placeholder: "Zip Code" %>
+  </div>
+
+  <div>
+    <%= f.submit "Add Property", class: "button button-primary" %>
+  </div>
+<% end %>

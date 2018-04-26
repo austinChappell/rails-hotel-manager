@@ -1,0 +1,27 @@
+<h1>Properties</h1>
+
+<% if @properties.any? %>
+  <div class="properties-index">
+    <button class="prev-arrow">
+      Previous
+    </button>
+    <div class="outer-wrapper">
+    <div class="wrapper">
+      <% @properties.each do |p| %>
+        <div class="property">
+          <h2>
+            <%= link_to p.label, property_path(p) %>
+          </h2>
+          <p>
+            <%= p.address %><br />
+            <%= p.city %>, <%= p.state %> <%= p.zip_code %>
+          </p>
+        </div>
+      <% end %>
+    </div>
+    </div>
+    <button class="next-arrow">
+      Next
+    </button>
+  </div>
+<% end %>
