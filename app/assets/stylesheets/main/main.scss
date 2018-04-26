@@ -52,6 +52,12 @@ nav {
   }
 }
 
+.page-action-subheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .button {
   border-radius: 5px;
   padding: 10px 20px;
@@ -60,6 +66,14 @@ nav {
 
 .button-primary {
   background-color: $color-primary;
+}
+
+.button-secondary {
+  background-color: $color-secondary;
+}
+
+.button-submit {
+  margin-top: 20px;
 }
 
 .flash-messages {

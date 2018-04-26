@@ -1,17 +1,7 @@
 .properties-index {
-  display: flex;
-  .outer-wrapper {
-    overflow: hidden;
-    flex-grow: 1;
-  }
-  .wrapper {
-    box-sizing: border-box;
-    width: 100%;
-    display: inline-block;
-    justify-content: space-between;
-    white-space: nowrap;
-    position: relative;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
   .property {
     position: relative;
     transition: 1000ms;
